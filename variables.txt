@@ -1,3 +1,5 @@
 env\Scripts\activate.bat
 set "FLASK_APP=run.py"
 set "FLASK_ENV=development"
+from run import db
+db.create_all()
