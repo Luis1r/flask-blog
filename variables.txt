@@ -1,5 +1,6 @@
 env\Scripts\activate.bat
 set "FLASK_APP=entrypoint.py"
 set "FLASK_ENV=development"
+set "APP_SETTINGS_MODULE=config.local"
 from run import db
 db.create_all()
