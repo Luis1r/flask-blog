@@ -43,6 +43,9 @@ def register_error_handlers(app):
     @app.errorhandler(404)
     def error_404_handler(e):
         return render_template('404.html'), 404
+    @app.errorhandler(401)
+    def error_404_handler(e):
+        return render_template('401.html'), 401
 
 def configure_logging(app):
     # Elimina los manejadores por defecto de la app
